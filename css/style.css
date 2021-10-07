@@ -2,6 +2,7 @@ html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -26,4 +27,30 @@ h1, h2, h3, h4, h5, h6, p {
         inset 0 4px 12px #FFFFFF66;
     backdrop-filter: blur(40px);
     border-radius: 10px;
+}
+.glass-user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.glass-user {
+    background-color: #01010D0D;
+    box-shadow:
+            0 4px 20px #01010D33,
+            inset 0 1px 2px #FFFFFFCC,
+            inset 0 20px 40px #FFFFFF40,
+            inset 0 -4px 4px #FFFFFF40,
+            inset 0 -40px 40px #01010D33,
+            inset 0 4px 12px #FFFFFF66;
+    backdrop-filter: blur(40px);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 42px;
+    box-sizing: border-box;
 }
