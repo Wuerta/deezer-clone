@@ -15,32 +15,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;
     color: #FFFFFF;
 }
-
-.welcome-body {
-    background-image: linear-gradient(180deg, rgba(1, 1, 13, 0) 0%, #01010D 31.77%, #280140 100%),url("../images/party.webp");
-    background-repeat: no-repeat;
-}
-.image-logo {
-    width: 80px;
-    height: 80px;
-    margin: 16px 24px;
-}
-.image-party {
-    width: 100%;
-}
-h1 {
-    text-align: center;
-    font-size: 64px;
-    line-height: 75px;
-}
-h2 {
-    text-align: center;
-    padding: 32px ;
-    font-size: 36px;
-    line-height: 42px;
-}
-footer {
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
+.glass-button {
+    background-color: #01010D0D;
+    box-shadow:
+        0 4px 20px #01010D33,
+        inset 0 1px 2px #FFFFFFCC,
+        inset 0 20px 40px #FFFFFF40,
+        inset 0 -4px 4px #FFFFFF40,
+        inset 0 -40px 40px #01010D33,
+        inset 0 4px 12px #FFFFFF66;
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
 }
