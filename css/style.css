@@ -3,6 +3,7 @@ body {
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
     overflow-x: hidden;
+    background: linear-gradient(180deg, #01010D 0%, #280140 100%);
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
