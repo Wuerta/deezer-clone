@@ -52,25 +52,35 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 42px;
     box-sizing: border-box;
     transition: ease 250ms;
+    overflow: hidden;
 }
 .glass-user:hover {
     border-radius: 0 0 0 10px;
     width: 400px;
-    padding-bottom: 0;
 }
 .glass-user:hover .avatar {
     width: 56px;
     height: 56px;
 }
+.glass-user:hover .logout {
+    padding: 24px;
+    height: 60px;
+    width: 252px;
+    border-top-color: #FFFFFF99;
+}
 .logout {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 168px;
-    padding: 24px 0;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: ease 250ms;
+    border-top: 1px solid transparent;
+    cursor: pointer;
 }
 .logout-icon {
     width: 22px;
@@ -79,7 +89,13 @@ h1, h2, h3, h4, h5, h6, p {
 .user-content {
     display: flex;
     align-items: center;
+    padding: 42px;
+    box-sizing: border-box;
+    transition: ease 250ms;
 }
 .username {
     margin-left: 16px;
+}
+.glass-user:hover .user-content{
+    padding: 16px 24px;
 }
