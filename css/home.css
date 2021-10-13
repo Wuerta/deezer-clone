@@ -22,14 +22,62 @@ main {
     align-items: center;
     justify-content: center;
 }
+.play-card p {
+    font-size: 24px;
+    margin-top: 16px; 
+}
+.play-card.favorite {
+    background-color: #050F2880;
+    box-shadow:
+        0 4px 20px #050F2833,
+        inset 0 1px 2px #C7C6FFCC,
+        inset 0 20px 40px #C7C6FF40,
+        inset 0 -4px 4px #C7C6FF40,
+        inset 0 -40px 40px #050F2833,
+        inset 0 4px 12px #050F2866;
+    backdrop-filter: blur(40px);
+}
 .play-card.favorite .play-card-content {
     background-color: #0F3189;
+}
+.play-card.playlist {
+    background-color: #21150480;
+    box-shadow:
+            0 4px 20px #21150433,
+            inset 0 1px 2px #FFE1C6CC,
+            inset 0 20px 40px #FFE1C640,
+            inset 0 -4px 4px #FFE1C640,
+            inset 0 -40px 40px #050F2833,
+            inset 0 4px 12px #FFE1C666;
+    backdrop-filter: blur(40px);
 }
 .play-card.playlist .play-card-content {
     background-color: #89580F;
 }
+.play-card.artists {
+    background-color: #121C1180;
+    box-shadow:
+            0 4px 20px #121C1133,
+            inset 0 1px 2px #DCFFC6CC,
+            inset 0 20px 40px #DCFFC640,
+            inset 0 -4px 4px #DCFFC640,
+            inset 0 -40px 40px #121C1133,
+            inset 0 4px 12px #DCFFC666;
+    backdrop-filter: blur(40px);
+}
 .play-card.artists .play-card-content {
     background-color: #294126;
+}
+.play-card.follows {
+    background-color: #07323280;
+    box-shadow:
+            0 4px 20px #07323233,
+            inset 0 1px 2px #C6FFF1CC,
+            inset 0 20px 40px #C6FFF140,
+            inset 0 -4px 4px #C6FFF140,
+            inset 0 -40px 40px #07323233,
+            inset 0 4px 12px #C6FFF166;
+    backdrop-filter: blur(40px);
 }
 .play-card.follows .play-card-content {
     background-color: #0F8989;
