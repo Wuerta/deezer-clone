@@ -19,6 +19,8 @@ section h1 {
     box-sizing: border-box;
     border-radius: 10px;
     margin: 24px;
+    cursor: pointer;
+    transition: ease 200ms;
 }
 .play-card-content {
     height: 252px;
@@ -29,7 +31,7 @@ section h1 {
 }
 .play-card .card-title {
     font-size: 24px;
-    margin-top: 16px; 
+    margin-top: 16px;
 }
 .play-card .card-subtitle {
     font-size: 18px;
@@ -52,12 +54,12 @@ section h1 {
 .play-card.playlist {
     background-color: #21150480;
     box-shadow:
-            0 4px 20px #21150433,
-            inset 0 1px 2px #FFE1C6CC,
-            inset 0 20px 40px #FFE1C640,
-            inset 0 -4px 4px #FFE1C640,
-            inset 0 -40px 40px #050F2833,
-            inset 0 4px 12px #FFE1C666;
+        0 4px 20px #21150433,
+        inset 0 1px 2px #FFE1C6CC,
+        inset 0 20px 40px #FFE1C640,
+        inset 0 -4px 4px #FFE1C640,
+        inset 0 -40px 40px #050F2833,
+        inset 0 4px 12px #FFE1C666;
     backdrop-filter: blur(40px);
 }
 .play-card.playlist .play-card-content {
@@ -66,12 +68,12 @@ section h1 {
 .play-card.artists {
     background-color: #121C1180;
     box-shadow:
-            0 4px 20px #121C1133,
-            inset 0 1px 2px #DCFFC6CC,
-            inset 0 20px 40px #DCFFC640,
-            inset 0 -4px 4px #DCFFC640,
-            inset 0 -40px 40px #121C1133,
-            inset 0 4px 12px #DCFFC666;
+        0 4px 20px #121C1133,
+        inset 0 1px 2px #DCFFC6CC,
+        inset 0 20px 40px #DCFFC640,
+        inset 0 -4px 4px #DCFFC640,
+        inset 0 -40px 40px #121C1133,
+        inset 0 4px 12px #DCFFC666;
     backdrop-filter: blur(40px);
 }
 .play-card.artists .play-card-content {
@@ -80,14 +82,58 @@ section h1 {
 .play-card.follows {
     background-color: #07323280;
     box-shadow:
-            0 4px 20px #07323233,
-            inset 0 1px 2px #C6FFF1CC,
-            inset 0 20px 40px #C6FFF140,
-            inset 0 -4px 4px #C6FFF140,
-            inset 0 -40px 40px #07323233,
-            inset 0 4px 12px #C6FFF166;
+        0 4px 20px #07323233,
+        inset 0 1px 2px #C6FFF1CC,
+        inset 0 20px 40px #C6FFF140,
+        inset 0 -4px 4px #C6FFF140,
+        inset 0 -40px 40px #07323233,
+        inset 0 4px 12px #C6FFF166;
     backdrop-filter: blur(40px);
 }
 .play-card.follows .play-card-content {
     background-color: #0F8989;
+}
+.play-card.card-1 {
+    background-color: #211F2880;
+    box-shadow:
+        0 4px 20px #211F2833,
+        inset 0 1px 2px #CECDFFCC,
+        inset 0 20px 40px #CECDFF40,
+        inset 0 -4px 4px #CECDFF40,
+        inset 0 -40px 40px #211F2833,
+        inset 0 4px 12px #CECDFF66;
+    backdrop-filter: blur(40px);
+}
+.play-card.card-2 {
+    background-color: #22030180;
+    box-shadow:
+        0 4px 20px #22030133,
+        inset 0 1px 2px #FFD4C6CC,
+        inset 0 20px 40px #FFD4C640,
+        inset 0 -4px 4px #FFD4C640,
+        inset 0 -40px 40px #22030133,
+        inset 0 4px 12px #FFD4C666;
+    backdrop-filter: blur(40px);
+}
+.play-card.card-3 {
+    background-color: #05050580;
+    box-shadow:
+        0 4px 20px #05050533,
+        inset 0 1px 2px #FFFFFFCC,
+        inset 0 20px 40px #FFFFFF40,
+        inset 0 -4px 4px #FFFFFF40,
+        inset 0 -40px 40px #05050533,
+        inset 0 4px 12px #FFFFFF66;
+    backdrop-filter: blur(40px);
+}
+.play-card.card-4 {
+    background-color: #0D020180;
+    box-shadow:
+        0 4px 20px #0D020133,
+        inset 0 1px 2px #FFC9C6CC,
+        inset 0 20px 40px #FFC9C640,
+        inset 0 -4px 4px #FFC9C640,
+        inset 0 -40px 40px #0D020133,
+        inset 0 4px 12px #FFC9C666;
+    backdrop-filter: blur(40px);
 }
