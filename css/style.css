@@ -4,7 +4,9 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     overflow-x: hidden;
     background-image: linear-gradient(180deg, #01010D 0%, #280140 100%);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -28,6 +30,10 @@ h1, h2, h3, h4, h5, h6, p {
         inset 0 4px 12px #FFFFFF66;
     backdrop-filter: blur(40px);
     border-radius: 10px;
+}
+header {
+    width: 100vw;
+    overflow-x: hidden;
 }
 .glass-user .avatar {
     width: 100px;
