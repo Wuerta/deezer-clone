@@ -1,139 +1,241 @@
-main {
-    padding: 160px 84px 0 84px;
-    box-sizing: border-box;
+.home-container {
+  width: 100%;
+  max-width: 1348px;
+  margin: 152px auto 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
 }
-section h1 {
-    font-size: 36px;
+
+.category-container .category-title {
+  font-size: 36px;
 }
+
 .cards-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+.music-card {
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 24px 24px 0;
+  cursor: pointer;
+}
+
+.music-card:active {
+  transform: scale(0.99);
+}
+
+.music-card .card-image-content {
+  width: 100%;
+  height: 100%;
+  max-width: 252px;
+  max-height: 252px;
+}
+
+.music-card.my-card .card-image-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 252px;
+}
+
+.music-card .card-title {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.music-card .card-subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.music-card.favorites {
+  background-color: #050f2880;
+  box-shadow: 0px 4px 20px #050F2833,
+    inset 0px 1px 2px #C7C6FFCC,
+    inset 0px 20px 40px #C7C6FF40,
+    inset 0px -4px 4px #C7C6FF40,
+    inset 0px -40px 40px #050F2833,
+    inset 0px 4px 12px #050F2866;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.favorites:hover {
+  background-color: #050f2880;
+  box-shadow: 0px 4px 20px #050F2843,
+    inset 0px 1px 2px #C7C6FFDC,
+    inset 0px 20px 40px #C7C6FF50,
+    inset 0px -4px 4px #C7C6FF50,
+    inset 0px -40px 40px #050F2843,
+    inset 0px 4px 12px #050F2876;
+}
+
+.music-card.favorites .card-image-content {
+  background-color: #0f3189;
+}
+
+.music-card.playlists {
+  background-color: #21150480;
+  box-shadow: 0px 4px 20px #21150433,
+    inset 0px 1px 2px #FFE1C6CC,
+    inset 0px 20px 40px #FFE1C640,
+    inset 0px -4px 4px #FFE1C640,
+    inset 0px -40px 40px #050F2833,
+    inset 0px 4px 12px #FFE1C666;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.playlists:hover {
+  box-shadow: 0px 4px 20px #21150443,
+    inset 0px 1px 2px #FFE1C6DC,
+    inset 0px 20px 40px #FFE1C650,
+    inset 0px -4px 4px #FFE1C650,
+    inset 0px -40px 40px #050F2843,
+    inset 0px 4px 12px #FFE1C676;
+}
+
+.music-card.playlists .card-image-content {
+  background-color: #89580F;
+}
+
+.music-card.artists {
+  box-shadow: 0px 4px 20px #121C1133,
+    inset 0px 1px 2px #DCFFC6CC,
+    inset 0px 20px 40px #DCFFC640,
+    inset 0px -4px 4px #DCFFC640,
+    inset 0px -40px 40px #121C1133,
+    inset 0px 4px 12px #DCFFC666;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.artists:hover {
+  box-shadow: 0px 4px 20px #121C1143,
+    inset 0px 1px 2px #DCFFC6DC,
+    inset 0px 20px 40px #DCFFC650,
+    inset 0px -4px 4px #DCFFC650,
+    inset 0px -40px 40px #121C1143,
+    inset 0px 4px 12px #DCFFC676;
+}
+
+.music-card.artists .card-image-content {
+  background-color: #294126;
+}
+
+.music-card.follows {
+  background-color: #07323280;
+  box-shadow: 0px 4px 20px #07323233,
+    inset 0px 1px 2px #C6FFF1CC,
+    inset 0px 20px 40px #C6FFF140,
+    inset 0px -4px 4px #C6FFF140,
+    inset 0px -40px 40px #07323233,
+    inset 0px 4px 12px #C6FFF166;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.follows:hover {
+  box-shadow: 0px 4px 20px #07323243,
+    inset 0px 1px 2px #C6FFF1DC,
+    inset 0px 20px 40px #C6FFF150,
+    inset 0px -4px 4px #C6FFF150,
+    inset 0px -40px 40px #07323243,
+    inset 0px 4px 12px #C6FFF176;
+}
+
+.music-card.follows .card-image-content {
+  background-color: #0F8989;
+}
+
+.music-card.card-1 {
+  background-color: #211F2880;
+  box-shadow: 0px 4px 20px #211F2833,
+    inset 0px 1px 2px #CECDFFCC,
+    inset 0px 20px 40px #CECDFF40,
+    inset 0px -4px 4px #CECDFF40,
+    inset 0px -40px 40px #211F2833,
+    inset 0px 4px 12px #CECDFF66;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.card-1:hover {
+  box-shadow: 0px 4px 20px #211F2843,
+    inset 0px 1px 2px #CECDFFDC,
+    inset 0px 20px 40px #CECDFF50,
+    inset 0px -4px 4px #CECDFF50,
+    inset 0px -40px 40px #211F2843,
+    inset 0px 4px 12px #CECDFF76;
+}
+
+.music-card.card-2 {
+  background-color: #22030180;
+  box-shadow: 0px 4px 20px #22030133,
+    inset 0px 1px 2px #FFD4C6CC,
+    inset 0px 20px 40px #FFD4C640,
+    inset 0px -4px 4px #FFD4C640,
+    inset 0px -40px 40px #22030133,
+    inset 0px 4px 12px #FFD4C666;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.card-2:hover {
+  box-shadow: 0px 4px 20px #22030143,
+    inset 0px 1px 2px #FFD4C6DC,
+    inset 0px 20px 40px #FFD4C650,
+    inset 0px -4px 4px #FFD4C650,
+    inset 0px -40px 40px #22030143,
+    inset 0px 4px 12px #FFD4C676;
+}
+
+.music-card.card-3 {
+  background-color: #05050580;
+  box-shadow: 0px 4px 20px #05050533,
+    inset 0px 1px 2px #FFFFFFCC,
+    inset 0px 20px 40px #FFFFFF40,
+    inset 0px -4px 4px #FFFFFF40,
+    inset 0px -40px 40px #05050533,
+    inset 0px 4px 12px #FFFFFF66;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.card-3:hover {
+  box-shadow: 0px 4px 20px #05050543,
+    inset 0px 1px 2px #FFFFFFDC,
+    inset 0px 20px 40px #FFFFFF50,
+    inset 0px -4px 4px #FFFFFF50,
+    inset 0px -40px 40px #05050543,
+    inset 0px 4px 12px #FFFFFF76;
+}
+
+.music-card.card-4 {
+  background-color: #0D020180;
+  box-shadow: 0px 4px 20px #0D020133,
+    inset 0px 1px 2px #FFC9C6CC,
+    inset 0px 20px 40px #FFC9C640,
+    inset 0px -4px 4px #FFC9C640,
+    inset 0px -40px 40px #0D020133,
+    inset 0px 4px 12px #FFC9C666;
+  backdrop-filter: blur(40px);
+}
+
+.music-card.card-4:hover {
+  box-shadow: 0px 4px 20px #0D020143,
+    inset 0px 1px 2px #FFC9C6DC,
+    inset 0px 20px 40px #FFC9C650,
+    inset 0px -4px 4px #FFC9C650,
+    inset 0px -40px 40px #0D020143,
+    inset 0px 4px 12px #FFC9C676;
+}
+
+@media screen and (max-width: 1342px) {
+  .home-container {
+    max-width: 720px;
+  }
+
+  .cards-container {
     justify-content: center;
-    width: 100%;
-    padding: 16px 0 32px 0;
-    flex-wrap: wrap;
-}
-.play-card {
-    width: 300px;
-    padding: 24px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin: 24px;
-    cursor: pointer;
-    transition: ease 200ms;
-}
-.play-card-content {
-    height: 252px;
-    width: 252px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.play-card .card-title {
-    font-size: 24px;
-    margin-top: 16px;
-}
-.play-card .card-subtitle {
-    font-size: 18px;
-    margin-top: 8px;
-}
-.play-card.favorite {
-    background-color: #050F2880;
-    box-shadow:
-        0 4px 20px #050F2833,
-        inset 0 1px 2px #C7C6FFCC,
-        inset 0 20px 40px #C7C6FF40,
-        inset 0 -4px 4px #C7C6FF40,
-        inset 0 -40px 40px #050F2833,
-        inset 0 4px 12px #050F2866;
-    backdrop-filter: blur(40px);
-}
-.play-card.favorite .play-card-content {
-    background-color: #0F3189;
-}
-.play-card.playlist {
-    background-color: #21150480;
-    box-shadow:
-        0 4px 20px #21150433,
-        inset 0 1px 2px #FFE1C6CC,
-        inset 0 20px 40px #FFE1C640,
-        inset 0 -4px 4px #FFE1C640,
-        inset 0 -40px 40px #050F2833,
-        inset 0 4px 12px #FFE1C666;
-    backdrop-filter: blur(40px);
-}
-.play-card.playlist .play-card-content {
-    background-color: #89580F;
-}
-.play-card.artists {
-    background-color: #121C1180;
-    box-shadow:
-        0 4px 20px #121C1133,
-        inset 0 1px 2px #DCFFC6CC,
-        inset 0 20px 40px #DCFFC640,
-        inset 0 -4px 4px #DCFFC640,
-        inset 0 -40px 40px #121C1133,
-        inset 0 4px 12px #DCFFC666;
-    backdrop-filter: blur(40px);
-}
-.play-card.artists .play-card-content {
-    background-color: #294126;
-}
-.play-card.follows {
-    background-color: #07323280;
-    box-shadow:
-        0 4px 20px #07323233,
-        inset 0 1px 2px #C6FFF1CC,
-        inset 0 20px 40px #C6FFF140,
-        inset 0 -4px 4px #C6FFF140,
-        inset 0 -40px 40px #07323233,
-        inset 0 4px 12px #C6FFF166;
-    backdrop-filter: blur(40px);
-}
-.play-card.follows .play-card-content {
-    background-color: #0F8989;
-}
-.play-card.card-1 {
-    background-color: #211F2880;
-    box-shadow:
-        0 4px 20px #211F2833,
-        inset 0 1px 2px #CECDFFCC,
-        inset 0 20px 40px #CECDFF40,
-        inset 0 -4px 4px #CECDFF40,
-        inset 0 -40px 40px #211F2833,
-        inset 0 4px 12px #CECDFF66;
-    backdrop-filter: blur(40px);
-}
-.play-card.card-2 {
-    background-color: #22030180;
-    box-shadow:
-        0 4px 20px #22030133,
-        inset 0 1px 2px #FFD4C6CC,
-        inset 0 20px 40px #FFD4C640,
-        inset 0 -4px 4px #FFD4C640,
-        inset 0 -40px 40px #22030133,
-        inset 0 4px 12px #FFD4C666;
-    backdrop-filter: blur(40px);
-}
-.play-card.card-3 {
-    background-color: #05050580;
-    box-shadow:
-        0 4px 20px #05050533,
-        inset 0 1px 2px #FFFFFFCC,
-        inset 0 20px 40px #FFFFFF40,
-        inset 0 -4px 4px #FFFFFF40,
-        inset 0 -40px 40px #05050533,
-        inset 0 4px 12px #FFFFFF66;
-    backdrop-filter: blur(40px);
-}
-.play-card.card-4 {
-    background-color: #0D020180;
-    box-shadow:
-        0 4px 20px #0D020133,
-        inset 0 1px 2px #FFC9C6CC,
-        inset 0 20px 40px #FFC9C640,
-        inset 0 -4px 4px #FFC9C640,
-        inset 0 -40px 40px #0D020133,
-        inset 0 4px 12px #FFC9C666;
-    backdrop-filter: blur(40px);
+  }
 }

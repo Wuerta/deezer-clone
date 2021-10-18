@@ -1,0 +1,29 @@
+.main-container.welcome-container {
+  height: calc(100vh - 128px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.app-title, .welcome-title {
+  margin-top: auto;
+  font-size: 64px;
+  text-align: center;
+}
+
+.welcome-container > .welcome-title {
+  margin: 0 0 48px 0;
+}
+
+.app-slogan {
+  margin: 32px 0 106px 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.login-alert {
+  margin-top: auto;
+  text-align: center;
+  font-size: 24px;
+}
